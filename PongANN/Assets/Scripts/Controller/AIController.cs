@@ -2,4 +2,4 @@
 
 public class AIController : PaddleController
 {
-  
+    [Serialize
