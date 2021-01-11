@@ -1,3 +1,5 @@
 ﻿using UnityEngine;
 
-public class AIController : PaddleCont
+public class AIController : PaddleController
+{
+  
