@@ -2,4 +2,5 @@
 
 public class AIController : PaddleController
 {
-    [Serialize
+    [SerializeField]
+    publ
