@@ -4,4 +4,5 @@ public class AIController : PaddleController
 {
     [SerializeField]
     public bool isLearning = false;
-    [SerializeFi
+    [SerializeField]
+    priv
