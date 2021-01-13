@@ -5,4 +5,6 @@ public class AIController : PaddleController
     [SerializeField]
     public bool isLearning = false;
     [SerializeField]
-    private int updateFrenquency 
+    private int updateFrenquency = 1;
+
+    priv
