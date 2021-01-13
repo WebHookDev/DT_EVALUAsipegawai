@@ -5,4 +5,4 @@ public class AIController : PaddleController
     [SerializeField]
     public bool isLearning = false;
     [SerializeField]
-    priv
+    private int updat
