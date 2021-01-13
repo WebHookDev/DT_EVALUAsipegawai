@@ -3,4 +3,4 @@
 public class AIController : PaddleController
 {
     [SerializeField]
-    publ
+    public bool isLe
