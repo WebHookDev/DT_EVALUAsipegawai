@@ -7,4 +7,4 @@ public class AIController : PaddleController
     [SerializeField]
     private int updateFrenquency = 1;
 
-    priv
+    private int frameC
