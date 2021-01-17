@@ -10,4 +10,4 @@ public class AIController : PaddleController
     private int frameCount = 0;
     private float wantedPosY = 0f;
 
-    [
+    [SerializeFi
