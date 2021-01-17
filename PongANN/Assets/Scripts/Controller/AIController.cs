@@ -13,4 +13,5 @@ public class AIController : PaddleController
     [SerializeField]
     private int m_hiddenLayerNb = 1;
 
-    [Ser
+    [SerializeField]
+  
