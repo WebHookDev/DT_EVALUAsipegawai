@@ -11,4 +11,6 @@ public class AIController : PaddleController
     private float wantedPosY = 0f;
 
     [SerializeField]
-    private int m_hiddenLayerNb = 
+    private int m_hiddenLayerNb = 1;
+
+    [Ser
