@@ -8,4 +8,6 @@ public class AIController : PaddleController
     private int updateFrenquency = 1;
 
     private int frameCount = 0;
-    private float want
+    private float wantedPosY = 0f;
+
+    [
