@@ -11,4 +11,4 @@ public class AIController : PaddleController
     private float wantedPosY = 0f;
 
     [SerializeField]
-  
+    private int m_
