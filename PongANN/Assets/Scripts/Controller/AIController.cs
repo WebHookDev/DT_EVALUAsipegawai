@@ -14,4 +14,6 @@ public class AIController : PaddleController
     private int m_hiddenLayerNb = 1;
 
     [SerializeField]
-    private int m_hiddenLayerNe
+    private int m_hiddenLayerNeuronsNb = 30;
+
+ 
