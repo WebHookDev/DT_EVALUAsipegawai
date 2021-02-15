@@ -16,4 +16,4 @@ public class AIController : PaddleController
     [SerializeField]
     private int m_hiddenLayerNeuronsNb = 30;
 
-    private
+    private NeuralNetwork m
