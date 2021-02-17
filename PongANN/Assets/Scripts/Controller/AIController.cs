@@ -17,4 +17,5 @@ public class AIController : PaddleController
     private int m_hiddenLayerNeuronsNb = 30;
 
     private NeuralNetwork m_neuralNetwork = null;
-    private float m_ballDirectio
+    private float m_ballDirectionX;
+   
