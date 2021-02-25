@@ -19,4 +19,4 @@ public class AIController : PaddleController
     private NeuralNetwork m_neuralNetwork = null;
     private float m_ballDirectionX;
     private float m_ballDirectionY;
-    priva
+    private float m_
