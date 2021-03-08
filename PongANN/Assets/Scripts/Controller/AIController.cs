@@ -24,4 +24,4 @@ public class AIController : PaddleController
     // Use this for initialization
     protected override void Start()
     {
-     
+        base.Sta
