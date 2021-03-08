@@ -25,4 +25,4 @@ public class AIController : PaddleController
     protected override void Start()
     {
         base.Start();
-        GameMgr.Instance.
+        GameMgr.Instance.Ball.OnBallTh
