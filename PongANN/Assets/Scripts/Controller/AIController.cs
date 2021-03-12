@@ -26,4 +26,4 @@ public class AIController : PaddleController
     {
         base.Start();
         GameMgr.Instance.Ball.OnBallThrown += OnBallThrown;
-        m_neuralNetwork = new NeuralN
+        m_neuralNetwork = new NeuralNetwork(
