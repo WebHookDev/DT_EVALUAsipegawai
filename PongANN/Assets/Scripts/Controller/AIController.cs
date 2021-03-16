@@ -32,4 +32,6 @@ public class AIController : PaddleController
     private void FixedUpdate()
     {
         if ( ++frameCount % updateFrenquency != 0 )
-           
+            return;
+
+  
