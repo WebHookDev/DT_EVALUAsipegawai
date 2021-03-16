@@ -28,3 +28,5 @@ public class AIController : PaddleController
         GameMgr.Instance.Ball.OnBallThrown += OnBallThrown;
         m_neuralNetwork = new NeuralNetwork( 3, 1, m_hiddenLayerNb, m_hiddenLayerNeuronsNb );
     }
+
+    private vo
