@@ -36,3 +36,5 @@ public class AIController : PaddleController
 
         //ProcessOutput();
     }
+
+    priv
