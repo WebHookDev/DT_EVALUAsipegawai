@@ -39,4 +39,5 @@ public class AIController : PaddleController
 
     private void ProcessOutput()
     {
-        Ball instanceBall = GameMgr.Insta
+        Ball instanceBall = GameMgr.Instance.Ball;
+ 
