@@ -40,4 +40,5 @@ public class AIController : PaddleController
     private void ProcessOutput()
     {
         Ball instanceBall = GameMgr.Instance.Ball;
-        m_ballPosY = instanceBall.transfo
+        m_ballPosY = instanceBall.transform.position.y;
+   
