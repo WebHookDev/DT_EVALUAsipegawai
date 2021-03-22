@@ -42,4 +42,4 @@ public class AIController : PaddleController
         Ball instanceBall = GameMgr.Instance.Ball;
         m_ballPosY = instanceBall.transform.position.y;
         m_ballDirectionX = instanceBall.Rigidbody.velocity.x;
-        m_ballDirectionY = instan
+        m_ballDirectionY = instanceBal
