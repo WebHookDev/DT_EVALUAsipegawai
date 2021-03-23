@@ -44,4 +44,4 @@ public class AIController : PaddleController
         m_ballDirectionX = instanceBall.Rigidbody.velocity.x;
         m_ballDirectionY = instanceBall.Rigidbody.velocity.y;
 
-        m_neuralNetwork.Execute( 
+        m_neuralNetwork.Execute( m_ballPosY, 
