@@ -47,4 +47,4 @@ public class AIController : PaddleController
         m_neuralNetwork.Execute( m_ballPosY, m_ballDirectionX, m_ballDirectionY );
 
         wantedPosY = Mathf.Lerp( -GameMgr.Instance.CourtHeight / 2.0f,
-                                 GameMgr
+                                 GameMgr.Instanc
