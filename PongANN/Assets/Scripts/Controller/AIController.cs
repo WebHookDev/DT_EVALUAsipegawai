@@ -51,4 +51,4 @@ public class AIController : PaddleController
                                  m_neuralNetwork.OutputLayer.Neurons[0].ActivationValue );
     }
 
-  
+    priv
