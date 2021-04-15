@@ -53,4 +53,4 @@ public class AIController : PaddleController
 
     private void Update()
     {
-        MoveToPos
+        MoveToPos( wantedPosY 
