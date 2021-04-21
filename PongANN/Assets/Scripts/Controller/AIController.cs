@@ -56,4 +56,4 @@ public class AIController : PaddleController
         MoveToPos( wantedPosY );
     }
 
-    protected
+    protected override void 
