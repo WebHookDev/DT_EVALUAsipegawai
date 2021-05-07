@@ -63,4 +63,5 @@ public class AIController : PaddleController
 
     public void OnPointLost( Vector3 ballPos )
     {
-        if ( isLea
+        if ( isLearning )
+      
