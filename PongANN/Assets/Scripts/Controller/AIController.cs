@@ -67,4 +67,4 @@ public class AIController : PaddleController
             ComputeLearning( ballPos );
     }
 
-    publi
+    public void On
