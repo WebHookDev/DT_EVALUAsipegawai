@@ -73,4 +73,5 @@ public class AIController : PaddleController
             //ComputeLearning( ballPos );
     }
 
-    public void OnBallThrow
+    public void OnBallThrown()
+    
