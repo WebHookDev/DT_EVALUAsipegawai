@@ -76,4 +76,6 @@ public class AIController : PaddleController
     public void OnBallThrown()
     {
         ProcessOutput();
-   
+    }
+
+    priv
