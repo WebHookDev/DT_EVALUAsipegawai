@@ -78,4 +78,4 @@ public class AIController : PaddleController
         ProcessOutput();
     }
 
-    private void ComputeL
+    private void ComputeLearning( Vector
