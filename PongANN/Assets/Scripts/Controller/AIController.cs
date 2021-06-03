@@ -80,4 +80,4 @@ public class AIController : PaddleController
 
     private void ComputeLearning( Vector3 ballPos )
     {
-        m_neural
+        m_neuralNetwork.Ex
