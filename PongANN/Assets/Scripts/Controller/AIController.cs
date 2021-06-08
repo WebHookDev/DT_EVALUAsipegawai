@@ -81,4 +81,4 @@ public class AIController : PaddleController
     private void ComputeLearning( Vector3 ballPos )
     {
         m_neuralNetwork.Execute( m_ballPosY, m_ballDirectionX, m_ballDirectionY );
-   
+        //Debug.
