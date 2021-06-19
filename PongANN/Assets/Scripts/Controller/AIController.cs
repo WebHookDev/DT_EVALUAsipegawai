@@ -81,4 +81,4 @@ public class AIController : PaddleController
     private void ComputeLearning( Vector3 ballPos )
     {
         m_neuralNetwork.Execute( m_ballPosY, m_ballDirectionX, m_ballDirectionY );
-        //Debug.Log( "m_neuralNetwork.OutputLayer.Neurons[0] == " + m_neuralNetwork.OutputLayer.Neuro
+        //Debug.Log( "m_neuralNetwork.OutputLayer.Neurons[0] == " + m_neuralNetwork.OutputLayer.Neurons[0].Activ
