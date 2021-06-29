@@ -83,4 +83,4 @@ public class AIController : PaddleController
         m_neuralNetwork.Execute( m_ballPosY, m_ballDirectionX, m_ballDirectionY );
         //Debug.Log( "m_neuralNetwork.OutputLayer.Neurons[0] == " + m_neuralNetwork.OutputLayer.Neurons[0].ActivationValue );
 
-        float wishedPlacementRatio = ( ballPos.y + GameMgr.Instance.CourtHeight / 2.0f ) / Game
+        float wishedPlacementRatio = ( ballPos.y + GameMgr.Instance.CourtHeight / 2.0f ) / GameMgr.Instance.
