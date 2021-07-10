@@ -86,4 +86,4 @@ public class AIController : PaddleController
         float wishedPlacementRatio = ( ballPos.y + GameMgr.Instance.CourtHeight / 2.0f ) / GameMgr.Instance.CourtHeight;
         //Debug.Log( "WishedPlacementRatio == " + wishedPlacementRatio );
 
-        m_neural
+        m_neuralNetwork
