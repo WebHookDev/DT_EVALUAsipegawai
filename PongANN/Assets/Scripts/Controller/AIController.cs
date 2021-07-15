@@ -87,4 +87,4 @@ public class AIController : PaddleController
         //Debug.Log( "WishedPlacementRatio == " + wishedPlacementRatio );
 
         m_neuralNetwork
-            .Train( new float[] { 
+            .Train( new float[] { m_ballPosY, m_bal
