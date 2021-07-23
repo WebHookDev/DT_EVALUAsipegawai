@@ -88,4 +88,4 @@ public class AIController : PaddleController
 
         m_neuralNetwork
             .Train( new float[] { m_ballPosY, m_ballDirectionX, m_ballDirectionY },
-         
+                    n
