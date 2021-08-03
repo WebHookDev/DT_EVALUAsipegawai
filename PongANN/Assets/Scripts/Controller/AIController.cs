@@ -90,4 +90,5 @@ public class AIController : PaddleController
             .Train( new float[] { m_ballPosY, m_ballDirectionX, m_ballDirectionY },
                     new float[]
                         {
-                            wishedPlacementRatio //-Mathf.Min( wishedOutput, 0.0f ), Mathf.Max( wishedOutpu
+                            wishedPlacementRatio //-Mathf.Min( wishedOutput, 0.0f ), Mathf.Max( wishedOutput, 0.0f )
+       
