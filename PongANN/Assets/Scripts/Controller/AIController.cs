@@ -91,4 +91,4 @@ public class AIController : PaddleController
                     new float[]
                         {
                             wishedPlacementRatio //-Mathf.Min( wishedOutput, 0.0f ), Mathf.Max( wishedOutput, 0.0f )
-       
+                 
