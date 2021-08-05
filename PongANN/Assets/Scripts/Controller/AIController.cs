@@ -92,4 +92,5 @@ public class AIController : PaddleController
                         {
                             wishedPlacementRatio //-Mathf.Min( wishedOutput, 0.0f ), Mathf.Max( wishedOutput, 0.0f )
                         } );
-   
+    }
+}
