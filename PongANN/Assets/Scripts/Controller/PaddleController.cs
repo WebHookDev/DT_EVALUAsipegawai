@@ -16,3 +16,19 @@ public abstract class PaddleController : MonoBehaviour
     public InputHandler OnMoveDown;
 
     virtual protected void Start()
+    {
+        height = transform.localScale.y;
+        border = GameMgr.Instance.CourtHeight / 2f - height / 2f;
+    }
+
+    protected void MoveUp()
+    {
+        if ( transform.position.y < border )
+            transform.Translate( Vector3.up * speed * Time.deltaTime );
+    }
+
+    protected void MoveDown()
+    {
+        if ( transform.position.y > -border )
+            transform.Translate( Vector3.down * speed * Time.deltaTime );
+    }
