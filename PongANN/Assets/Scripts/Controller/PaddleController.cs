@@ -32,3 +32,15 @@ public abstract class PaddleController : MonoBehaviour
         if ( transform.position.y > -border )
             transform.Translate( Vector3.down * speed * Time.deltaTime );
     }
+
+    protected void MoveToPos( float wantedPosY )
+    {
+        wantedPosY = Mathf.Max( Mathf.Min( wantedPosY, border ), -border );
+
+        if ( GameMgr.Instance.IsTrainingModeOn )
+        {
+            transform.position = new Vector2( transform.position.x, wantedPosY );
+        }
+        else
+        {
+            Vector3 toPos = new Vector3( 0f, wantedPosY - transform.position.y, 0f );
