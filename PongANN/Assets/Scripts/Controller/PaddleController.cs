@@ -44,3 +44,19 @@ public abstract class PaddleController : MonoBehaviour
         else
         {
             Vector3 toPos = new Vector3( 0f, wantedPosY - transform.position.y, 0f );
+            if ( toPos.magnitude > 0.1f )
+                toPos = toPos.normalized * speed;
+
+            transform.Translate( toPos * Time.deltaTime );
+        }
+    }
+
+    private void OnCollisionEnter2D( Collision2D col )
+    {
+        Ball ball = col.gameObject.GetComponent<Ball>();
+        if ( ball != null )
+            OnBallCollide( ball.transform.position );
+    }
+
+    protected void LaunchBall()
+    {
