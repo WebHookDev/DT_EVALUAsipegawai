@@ -60,3 +60,8 @@ public abstract class PaddleController : MonoBehaviour
 
     protected void LaunchBall()
     {
+        GameMgr.Instance.TryLaunchBall();
+    }
+
+    protected abstract void OnBallCollide( Vector3 ballPosition );
+}
