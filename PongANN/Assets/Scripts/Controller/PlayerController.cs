@@ -17,3 +17,14 @@ public class PlayerController : PaddleController
     }
 
     private void Update ()
+    {
+	    if (Input.GetAxis("Vertical") > 0f)
+        {
+            OnMoveUp();
+        }
+        else if (Input.GetAxis("Vertical") < 0f)
+        {
+            OnMoveDown();
+        }
+        else if (Input.GetButtonDown("Jump"))
+        {
