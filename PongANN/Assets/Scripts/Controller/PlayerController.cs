@@ -8,3 +8,12 @@ public class PlayerController : PaddleController
     {
         base.Start();
         OnMoveUp += MoveUp;
+        OnMoveDown += MoveDown;
+    }
+
+    protected override void OnBallCollide( Vector3 ballPosition )
+    {
+        GameMgr.Instance.AI.OnBallThrown();
+    }
+
+    private void Update ()
