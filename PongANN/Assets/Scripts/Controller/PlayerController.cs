@@ -28,3 +28,7 @@ public class PlayerController : PaddleController
         }
         else if (Input.GetButtonDown("Jump"))
         {
+            OnLaunchBall();
+        }
+    }
+}
