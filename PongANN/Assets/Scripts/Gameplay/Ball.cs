@@ -13,3 +13,20 @@ public class Ball : MonoBehaviour
     float currentSpeed;
     Rigidbody2D rigidBody;
     public Rigidbody2D Rigidbody { get { return rigidBody; } }
+
+    public delegate void BallEventHandler();
+    public event BallEventHandler OnBallThrown;
+    public event BallEventHandler OnBallCollidePaddle;
+
+    #region tools
+    static public float GetAngleInt(Vector2 dir)
+    {
+        int angle = Mathf.RoundToInt(Mathf.Acos(dir.x) * Mathf.Sign(dir.y) * Mathf.Rad2Deg);
+        return GetAngle0To1(angle);
+    }
+
+    static public float GetAngle0To1(int angle)
+    {
+        float angle0To1 = (angle + 90) / 180;
+        return GetRoundedValue(angle0To1);
+    }
