@@ -30,3 +30,13 @@ public class Ball : MonoBehaviour
         float angle0To1 = (angle + 90) / 180;
         return GetRoundedValue(angle0To1);
     }
+
+    static public int GetAngleDegree(float angle)
+    {
+        int angleDegree = Mathf.RoundToInt((angle * 180f) - 90f);
+        return angleDegree;
+    }
+
+    static public float GetRoundedValue(float val, int nbDecimal = 1)
+    {
+        return (float)Math.Round(Convert.ToDecimal(val), nbDecimal);
