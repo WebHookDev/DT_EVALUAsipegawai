@@ -40,3 +40,16 @@ public class Ball : MonoBehaviour
     static public float GetRoundedValue(float val, int nbDecimal = 1)
     {
         return (float)Math.Round(Convert.ToDecimal(val), nbDecimal);
+    }
+
+    static public float GetBallPos0To1(float posY)
+    {
+        int courtHeight = GameMgr.Instance.CourtHeight;
+        float output = posY / courtHeight + 0.5f;
+        return output = Mathf.Max(Mathf.Min(output, 1f), 0f);
+    }
+
+    static public float GetBallPos0To1Rounded(float posY)
+    {
+        return GetRoundedValue(GetBallPos0To1(posY), 2);
+    }
