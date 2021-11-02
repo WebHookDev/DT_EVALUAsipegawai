@@ -53,3 +53,10 @@ public class Ball : MonoBehaviour
     {
         return GetRoundedValue(GetBallPos0To1(posY), 2);
     }
+
+    static public float ComputeBallPosCourt(float pos0To1)
+    {
+        return (pos0To1 - 0.5f) * GameMgr.Instance.CourtHeight;
+    }
+    #endregion
+
