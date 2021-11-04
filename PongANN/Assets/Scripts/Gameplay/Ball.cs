@@ -60,3 +60,29 @@ public class Ball : MonoBehaviour
     }
     #endregion
 
+
+    // Use this for initialization
+    private void Awake()
+    {
+        rigidBody = GetComponent<Rigidbody2D>();
+    }
+
+    private void Update()
+    {
+        if (IsBallStuck())
+            ForceBallBounceBack();
+        else if (IsBallOut())
+            transform.position = Vector2.zero;
+    }
+
+    public void Launch(bool useRandomDir = false, bool repeatLastLaunch = false)
+    {
+        float angle = 0.5f;
+        if (repeatLastLaunch)
+        {
+            // TODO
+        }
+        else if (useRandomDir)
+        {
+            angle = UnityEngine.Random.Range(0.2f, 0.8f);
+        }
