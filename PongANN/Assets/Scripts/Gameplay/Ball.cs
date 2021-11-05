@@ -86,3 +86,15 @@ public class Ball : MonoBehaviour
         {
             angle = UnityEngine.Random.Range(0.2f, 0.8f);
         }
+
+        int degAngle = GetAngleDegree(angle);
+        Vector2 dir = new Vector2(Mathf.Cos(degAngle * Mathf.Deg2Rad), Mathf.Sin(degAngle * Mathf.Deg2Rad));
+        rigidBody.velocity = dir * InitialSpeed;
+        currentSpeed = InitialSpeed;
+
+        if (OnBallThrown != null)
+            OnBallThrown();
+    }
+
+    private float ComputeHitFactor(Vector2 racketPos, float racketHeight)
+    {
