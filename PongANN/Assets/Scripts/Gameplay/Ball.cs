@@ -109,3 +109,14 @@ public class Ball : MonoBehaviour
     private bool IsBallOut()
     {
         return Mathf.Abs(transform.position.x) > 10f || Mathf.Abs(transform.position.y) > 10f;
+    }
+
+    private void ForceBallBounceBack()
+    {
+        rigidBody.velocity = Vector2.left * currentSpeed;
+        Vector3 newPos = transform.position;
+        newPos.x -= transform.localScale.x;
+        transform.position = newPos;
+    }
+
+    private void OnCollisionStay2D(Collision2D col)
