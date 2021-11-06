@@ -98,3 +98,14 @@ public class Ball : MonoBehaviour
 
     private float ComputeHitFactor(Vector2 racketPos, float racketHeight)
     {
+        return (transform.position.y - racketPos.y) / racketHeight;
+    }
+
+    private bool IsBallStuck()
+    {
+        return GameMgr.Instance.IsBallLaunched && rigidBody.velocity.magnitude <= 0.001f;
+    }
+
+    private bool IsBallOut()
+    {
+        return Mathf.Abs(transform.position.x) > 10f || Mathf.Abs(transform.position.y) > 10f;
