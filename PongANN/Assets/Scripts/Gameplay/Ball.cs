@@ -120,3 +120,18 @@ public class Ball : MonoBehaviour
     }
 
     private void OnCollisionStay2D(Collision2D col)
+    {
+        if (col.gameObject.tag != "Player")
+            return;
+
+        if (IsBallStuck())
+            ForceBallBounceBack();
+    }
+
+    private void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.tag != "Player")
+            return;
+
+        // deal collision with upper or lower part of bracket
+        if ( col.contacts.Length > 0 )
