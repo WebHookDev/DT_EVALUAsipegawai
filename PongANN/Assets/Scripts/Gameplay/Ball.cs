@@ -135,3 +135,13 @@ public class Ball : MonoBehaviour
 
         // deal collision with upper or lower part of bracket
         if ( col.contacts.Length > 0 )
+        {
+            Vector3 colNormal = col.contacts[0].normal;
+            if ( colNormal.x == 0f )
+            {
+                float x = ComputeHitFactor( col.transform.position, col.collider.bounds.size.x );
+                float sign = colNormal.y;
+                Vector2 dir = new Vector2( x, sign ).normalized;
+                if ( dir.magnitude > 0f )
+                {
+                    currentSpeed = Mathf.Min( MaxSpeed, currentSpeed + HitAcceleration );
