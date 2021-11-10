@@ -145,3 +145,20 @@ public class Ball : MonoBehaviour
                 if ( dir.magnitude > 0f )
                 {
                     currentSpeed = Mathf.Min( MaxSpeed, currentSpeed + HitAcceleration );
+                    rigidBody.velocity = dir * currentSpeed;
+                }
+                else
+                {
+                    Debug.LogWarning( "magnitude <= 0 " + dir.magnitude );
+                }
+            }
+            // collision with front part of the paddle
+            else
+            {
+                float y = ComputeHitFactor( col.transform.position, col.collider.bounds.size.y );
+                float sign = colNormal.x;
+                Vector2 dir = new Vector2( sign, y ).normalized;
+                if ( dir.magnitude > 0f )
+                {
+                    currentSpeed = Mathf.Min( MaxSpeed, currentSpeed + HitAcceleration );
+                    rigidBody.velocity = dir * currentSpeed;
