@@ -162,3 +162,12 @@ public class Ball : MonoBehaviour
                 {
                     currentSpeed = Mathf.Min( MaxSpeed, currentSpeed + HitAcceleration );
                     rigidBody.velocity = dir * currentSpeed;
+                }
+                else
+                {
+                    Debug.LogWarning( "magnitude <= 0 " + dir.magnitude );
+                }
+            }
+        }
+
+        if (OnBallCollidePaddle != null)
