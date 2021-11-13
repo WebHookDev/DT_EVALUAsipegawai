@@ -171,3 +171,7 @@ public class Ball : MonoBehaviour
         }
 
         if (OnBallCollidePaddle != null)
+            OnBallCollidePaddle();
+    }
+
+}
