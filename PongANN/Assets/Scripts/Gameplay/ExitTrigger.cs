@@ -1,3 +1,3 @@
 ﻿using UnityEngine;
 
-publi
+public class 
