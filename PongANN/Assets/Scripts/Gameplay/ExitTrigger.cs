@@ -1,3 +1,3 @@
 ﻿using UnityEngine;
 
-public class ExitTrigger : Mon
+public class ExitTrigger : MonoBehavi
