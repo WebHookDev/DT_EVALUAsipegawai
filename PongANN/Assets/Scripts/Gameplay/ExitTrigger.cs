@@ -2,4 +2,5 @@
 
 public class ExitTrigger : MonoBehaviour {
 
-   
+    [SerializeField]
+ 
