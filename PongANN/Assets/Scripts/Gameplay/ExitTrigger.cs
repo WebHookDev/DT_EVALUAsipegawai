@@ -3,4 +3,5 @@
 public class ExitTrigger : MonoBehaviour {
 
     [SerializeField]
-    private bool isLeftSide = tr
+    private bool isLeftSide = true;
+    pu
