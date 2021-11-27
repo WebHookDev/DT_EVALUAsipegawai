@@ -4,4 +4,4 @@ public class ExitTrigger : MonoBehaviour {
 
     [SerializeField]
     private bool isLeftSide = true;
-    public delegate void OnBa
+    public delegate void OnBallExitHandler
