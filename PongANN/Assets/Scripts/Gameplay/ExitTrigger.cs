@@ -7,4 +7,5 @@ public class ExitTrigger : MonoBehaviour {
     public delegate void OnBallExitHandler(bool isLeftSide);
     public event OnBallExitHandler OnBallExit;
 
-    private void OnTriggerEnter2D(Collider2D c
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
