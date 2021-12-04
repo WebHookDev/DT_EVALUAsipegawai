@@ -9,3 +9,4 @@ public class ExitTrigger : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
+        if (coll
