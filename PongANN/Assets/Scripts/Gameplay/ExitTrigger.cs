@@ -9,4 +9,4 @@ public class ExitTrigger : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.gameObject
+        if (collider.gameObject.layer == La
