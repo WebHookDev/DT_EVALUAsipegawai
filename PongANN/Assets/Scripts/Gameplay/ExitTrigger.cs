@@ -11,4 +11,5 @@ public class ExitTrigger : MonoBehaviour {
     {
         if (collider.gameObject.layer == LayerMask.NameToLayer("Ball"))
         {
-            OnBallExit(isLef
+            OnBallExit(isLeftSide);
+    
