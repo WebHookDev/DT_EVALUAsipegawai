@@ -14,3 +14,4 @@ public class ExitTrigger : MonoBehaviour {
             OnBallExit(isLeftSide);
         }
     }
+}
