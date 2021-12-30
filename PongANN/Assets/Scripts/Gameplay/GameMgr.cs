@@ -9,3 +9,13 @@ public class GameMgr : MonoBehaviour
     static public GameMgr Instance
     {
         get
+        {
+            if ( instance == null )
+                instance = FindObjectOfType<GameMgr>();
+            return instance;
+        }
+    }
+
+    private int courtHeight = 0;
+    public int CourtHeight
+    {
