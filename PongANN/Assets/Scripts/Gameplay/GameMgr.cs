@@ -31,3 +31,17 @@ public class GameMgr : MonoBehaviour
     // debug output text
     private Text ballDataPosYText;
     private Text ballDataVelocityText;
+    private Text timeScaleText;
+    private Slider timeScaleSlider;
+    private GameObject ToggleRandomDirGao;
+
+    private Ball ball;
+    public Ball Ball
+    {
+        get { return ball; }
+    }
+    bool isBallLaunched = false;
+    public bool IsBallLaunched
+    {
+        get { return isBallLaunched; }
+    }
