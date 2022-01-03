@@ -45,3 +45,19 @@ public class GameMgr : MonoBehaviour
     {
         get { return isBallLaunched; }
     }
+
+    private GameObject playerGao;
+    private GameObject aiGao;
+
+    private AIController ai;
+    public AIController AI
+    {
+        get { return ai; }
+    }
+
+    [SerializeField]
+    private bool isTrainingModeOn = false;
+    public bool IsTrainingModeOn
+    {
+        get { return isTrainingModeOn; }
+    }
