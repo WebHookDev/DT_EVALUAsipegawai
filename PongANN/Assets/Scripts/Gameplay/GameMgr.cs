@@ -79,3 +79,15 @@ public class GameMgr : MonoBehaviour
         score2Text = GameObject.Find( "Score2" ).GetComponent<Text>();
 
         timeScaleSlider = GameObject.Find( "TimeScaleSlider" ).GetComponent<Slider>();
+        timeScaleText = GameObject.Find( "TimeScaleText" ).GetComponent<Text>();
+        timeScaleText.text = string.Format( "TimeScale {0:0.0}", timeScaleSlider.value );
+
+        ToggleRandomDirGao = GameObject.Find( "ToggleRandomDir" );
+        ToggleRandomDirGao.SetActive( false );
+
+        courtHeight = Mathf.RoundToInt( Camera.main.orthographicSize * 2f );
+        nbTrainingSteps = Mathf.RoundToInt( courtHeight / ball.transform.localScale.y );
+    }
+
+    void Start()
+    {
