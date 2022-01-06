@@ -61,3 +61,21 @@ public class GameMgr : MonoBehaviour
     {
         get { return isTrainingModeOn; }
     }
+    [SerializeField]
+    private bool randomDirOn = false;
+    private int trainingStep = 0;
+    private int nbTrainingSteps = 0;
+    private bool isTrainingPosDownward = true;
+
+    // Use this for initialization
+    void Awake()
+    {
+        ball = FindObjectOfType<Ball>();
+        playerGao = GameObject.Find( "Paddle1" );
+        aiGao = GameObject.Find( "Paddle2" );
+        ai = aiGao.GetComponent<AIController>();
+
+        score1Text = GameObject.Find( "Score1" ).GetComponent<Text>();
+        score2Text = GameObject.Find( "Score2" ).GetComponent<Text>();
+
+        timeScaleSlider = GameObject.Find( "TimeScaleSlider" ).GetComponent<Slider>();
