@@ -107,3 +107,9 @@ public class GameMgr : MonoBehaviour
 
             if ( isTrainingPosDownward )
                 trainingPos.y = CourtHeight / 2f
+                                - ball.transform.localScale.y / 2f
+                                - ball.transform.localScale.y * trainingStep;
+
+            else
+                trainingPos.y = CourtHeight / 2f
+                                - ball.transform.localScale.y / 2f
