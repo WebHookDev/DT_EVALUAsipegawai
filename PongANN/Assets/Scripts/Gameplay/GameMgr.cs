@@ -91,3 +91,19 @@ public class GameMgr : MonoBehaviour
 
     void Start()
     {
+        foreach ( ExitTrigger trigger in FindObjectsOfType<ExitTrigger>() )
+        {
+            trigger.OnBallExit += OnBallExit;
+        }
+        playerGao.GetComponent<PlayerController>().OnLaunchBall += TryLaunchBall;
+    }
+
+    void Update()
+    {
+        if ( isTrainingModeOn && isBallLaunched == false )
+        {
+            Vector3 trainingPos = playerGao.transform.position + Vector3.right * 0.6f;
+
+
+            if ( isTrainingPosDownward )
+                trainingPos.y = CourtHeight / 2f
