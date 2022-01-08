@@ -127,3 +127,21 @@ public class GameMgr : MonoBehaviour
     {
         if ( isTrainingModeOn == false && isBallLaunched == false )
         {
+            ball.transform.position = playerGao.transform.position + Vector3.right * 0.6f;
+        }
+    }
+
+    public void TryLaunchBall()
+    {
+        if ( isBallLaunched == false )
+        {
+            if ( isTrainingModeOn )
+                ball.Launch( randomDirOn );
+            else
+                ball.Launch();
+
+            isBallLaunched = true;
+        }
+    }
+
+    private void OnBallExit( bool isLeftSide )
