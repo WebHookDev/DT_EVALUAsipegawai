@@ -113,3 +113,17 @@ public class GameMgr : MonoBehaviour
             else
                 trainingPos.y = CourtHeight / 2f
                                 - ball.transform.localScale.y / 2f
+                                - ball.transform.localScale.y * ( nbTrainingSteps - trainingStep );
+
+
+            ball.transform.position = trainingPos;
+            if ( trainingStep == nbTrainingSteps - 1 ) isTrainingPosDownward = !isTrainingPosDownward;
+            trainingStep = ( trainingStep + 1 ) % nbTrainingSteps;
+            TryLaunchBall();
+        }
+    }
+
+    void LateUpdate()
+    {
+        if ( isTrainingModeOn == false && isBallLaunched == false )
+        {
