@@ -145,3 +145,6 @@ public class GameMgr : MonoBehaviour
     }
 
     private void OnBallExit( bool isLeftSide )
+    {
+        ball.Rigidbody.velocity = Vector2.zero;
+        isBallLaunched = false;
