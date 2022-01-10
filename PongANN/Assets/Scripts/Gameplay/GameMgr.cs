@@ -148,3 +148,17 @@ public class GameMgr : MonoBehaviour
     {
         ball.Rigidbody.velocity = Vector2.zero;
         isBallLaunched = false;
+
+        if ( isLeftSide )
+        {
+            scoreP2++;
+            score2Text.text = scoreP2.ToString();
+        }
+        else
+        {
+            scoreP1++;
+            score1Text.text = scoreP1.ToString();
+
+            ai.OnPointLost( ball.transform.position );
+        }
+    }
