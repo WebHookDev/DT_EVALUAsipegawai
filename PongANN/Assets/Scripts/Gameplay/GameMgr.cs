@@ -173,3 +173,14 @@ public class GameMgr : MonoBehaviour
         playerGao.GetComponent<BoxCollider2D>().enabled = !isTrainingModeOn;
         ToggleRandomDirGao.SetActive( isTrainingModeOn );
     }
+
+    public void ToggleRandomDir()
+    {
+        randomDirOn = !randomDirOn;
+    }
+
+    public void OnTimeScaleChanged()
+    {
+        Time.timeScale = timeScaleSlider.value;
+        timeScaleText.text = string.Format( "TimeScale {0:0.0}", timeScaleSlider.value );
+    }
