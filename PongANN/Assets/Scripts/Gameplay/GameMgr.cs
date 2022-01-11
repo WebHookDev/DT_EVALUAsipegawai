@@ -162,3 +162,14 @@ public class GameMgr : MonoBehaviour
             ai.OnPointLost( ball.transform.position );
         }
     }
+
+    #region UI Training
+    // UI binded methods for training
+
+    public void ToggleTrainingMode()
+    {
+        isTrainingModeOn = !isTrainingModeOn;
+        ai.isLearning = isTrainingModeOn;
+        playerGao.GetComponent<BoxCollider2D>().enabled = !isTrainingModeOn;
+        ToggleRandomDirGao.SetActive( isTrainingModeOn );
+    }
