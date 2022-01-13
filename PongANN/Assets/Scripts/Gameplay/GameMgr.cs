@@ -184,3 +184,5 @@ public class GameMgr : MonoBehaviour
         Time.timeScale = timeScaleSlider.value;
         timeScaleText.text = string.Format( "TimeScale {0:0.0}", timeScaleSlider.value );
     }
+    #endregion
+}
