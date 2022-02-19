@@ -24,3 +24,9 @@ public class NeuralNetwork
         get { return m_outputNb; }
         protected set { m_outputNb = value; }
     }
+
+    private int m_hiddenLayerNb;
+    public int HiddenLayerNb
+    {
+        get { return m_hiddenLayerNb; }
+        protected set { m_hiddenLayerNb = value; }
