@@ -30,3 +30,14 @@ public class NeuralNetwork
     {
         get { return m_hiddenLayerNb; }
         protected set { m_hiddenLayerNb = value; }
+    }
+
+    private int m_neuronsPerHiddenLayer;
+    public int NeuronsPerHiddenLayer
+    {
+        get { return m_neuronsPerHiddenLayer; }
+        protected set { m_neuronsPerHiddenLayer = value; }
+    }
+    #endregion
+
+    #region Layers
