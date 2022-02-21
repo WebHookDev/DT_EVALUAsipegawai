@@ -41,3 +41,21 @@ public class NeuralNetwork
     #endregion
 
     #region Layers
+    private NeuronLayer m_inputLayer;
+    public NeuronLayer InputLayer
+    {
+        get { return m_inputLayer; }
+        protected set { m_inputLayer = value; }
+    }
+
+    private NeuronLayer m_outputLayer;
+    public NeuronLayer OutputLayer
+    {
+        get { return m_outputLayer; }
+        protected set { m_outputLayer = value; }
+    }
+
+    private NeuronLayer[] m_hiddenLayers;
+    public NeuronLayer[] HiddenLayers
+    {
+        get { return m_hiddenLayers; }
