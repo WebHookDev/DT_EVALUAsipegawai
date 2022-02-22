@@ -59,3 +59,16 @@ public class NeuralNetwork
     public NeuronLayer[] HiddenLayers
     {
         get { return m_hiddenLayers; }
+        protected set { m_hiddenLayers = value; }
+    }
+    #endregion
+
+    public NeuralNetwork( int inputNb, int outputNb, int hiddenLayerNb = 1, int neuronsPerHiddenLayer = 2 )
+    {
+        if ( inputNb < 1 || outputNb < 1 || hiddenLayerNb < 1 || neuronsPerHiddenLayer < 1 /*2*/ )
+            throw new ArgumentException();
+
+        Gain = 1.0f;
+
+        InputNb = inputNb;
+        InputLayer = new NeuronLayer( this, InputNb );
