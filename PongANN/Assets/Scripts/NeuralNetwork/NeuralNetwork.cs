@@ -84,3 +84,19 @@ public class NeuralNetwork
 
         CreateLinks();
     }
+
+    private void CreateLinks()
+    {
+        InputLayer.NextLayer = HiddenLayers[0];
+
+        for ( int i = 1; i < HiddenLayerNb; ++i )
+            HiddenLayers[i - 1].NextLayer = HiddenLayers[i];
+
+        HiddenLayers[HiddenLayerNb - 1].NextLayer = OutputLayer;
+    }
+
+    #region Execution
+    private void SetInputs( params float[] inputs )
+    {
+        if ( inputs.Length != InputNb )
+            throw new ArgumentException();
