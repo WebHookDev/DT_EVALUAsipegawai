@@ -72,3 +72,15 @@ public class NeuralNetwork
 
         InputNb = inputNb;
         InputLayer = new NeuronLayer( this, InputNb );
+
+        OutputNb = outputNb;
+        OutputLayer = new NeuronLayer( this, OutputNb );
+
+        HiddenLayerNb = hiddenLayerNb;
+        NeuronsPerHiddenLayer = neuronsPerHiddenLayer;
+        HiddenLayers = new NeuronLayer[HiddenLayerNb];
+        for ( int i = 0; i < hiddenLayerNb; ++i )
+            HiddenLayers[i] = new NeuronLayer( this, NeuronsPerHiddenLayer );
+
+        CreateLinks();
+    }
