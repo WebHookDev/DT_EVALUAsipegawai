@@ -100,3 +100,13 @@ public class NeuralNetwork
     {
         if ( inputs.Length != InputNb )
             throw new ArgumentException();
+
+        // Set values for inputs
+        for ( int i = 0; i < InputNb; i++ )
+            InputLayer.Neurons[i].SetAsInput( inputs[i] );
+    }
+
+    private void ExecuteInputLayer()
+    {
+        HiddenLayers[0].ActivateLayer();
+    }
