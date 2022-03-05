@@ -123,3 +123,15 @@ public class NeuralNetwork
     {
         OutputLayer.ActivateLayer();
     }
+
+    public void Execute( params float[] inputs )
+    {
+        SetInputs( inputs );
+
+        ExecuteInputLayer();
+        ExecuteHiddenLayers();
+        ExecuteOutputLayer();
+    }
+    #endregion
+
+    #region Training
