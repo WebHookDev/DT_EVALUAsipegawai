@@ -110,3 +110,16 @@ public class NeuralNetwork
     {
         HiddenLayers[0].ActivateLayer();
     }
+
+    private void ExecuteHiddenLayers()
+    {
+        for ( int i = 1; i < HiddenLayerNb; ++i )
+        {
+            HiddenLayers[i].ActivateLayer();
+        }
+    }
+
+    private void ExecuteOutputLayer()
+    {
+        OutputLayer.ActivateLayer();
+    }
