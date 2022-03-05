@@ -135,3 +135,16 @@ public class NeuralNetwork
     #endregion
 
     #region Training
+    public void Train( float[] inputs, float[] outputsWished )
+    {
+        if ( outputsWished.Length != OutputNb )
+            throw new ArgumentException();
+
+        Execute( inputs );
+
+        if ( true )
+        {
+            Console.Write( "\n\n-----------------------------------\n" );
+            Console.Write( "Inputs" );
+            foreach ( float oneInput in inputs )
+                Console.Write( "\tInput[{0}]\n", oneInput );
