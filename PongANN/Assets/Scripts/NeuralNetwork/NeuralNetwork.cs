@@ -158,3 +158,14 @@ public class NeuralNetwork
         }
 
         ComputeBackpropagation( outputsWished );
+    }
+
+    private void ComputeFirstOutputBackprop( float[] outputsWished )
+    {
+        // Manage error with Output values
+        for ( int i = 0; i < OutputNb; ++i )
+        {
+            Neuron oneOutput = OutputLayer.Neurons[i];
+
+            // Modify values of last HiddenLayer using Output values
+            for ( int j = 0; j < NeuronsPerHiddenLayer; ++j )
