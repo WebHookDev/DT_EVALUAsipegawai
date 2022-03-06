@@ -148,3 +148,13 @@ public class NeuralNetwork
             Console.Write( "Inputs" );
             foreach ( float oneInput in inputs )
                 Console.Write( "\tInput[{0}]\n", oneInput );
+            Console.Write( "\n" );
+
+            Console.Write( "Outputs" );
+            for ( int i = 0; i < OutputNb; ++i )
+                Console.Write( "\tOutput[{0}] || OutputWished[{1}]\n", OutputLayer.Neurons[i].ActivationValue,
+                               outputsWished[i] );
+            Console.Write( "\n-----------------------------------\n\n" );
+        }
+
+        ComputeBackpropagation( outputsWished );
