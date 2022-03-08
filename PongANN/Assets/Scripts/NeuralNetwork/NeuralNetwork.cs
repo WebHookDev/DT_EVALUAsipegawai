@@ -169,3 +169,12 @@ public class NeuralNetwork
 
             // Modify values of last HiddenLayer using Output values
             for ( int j = 0; j < NeuronsPerHiddenLayer; ++j )
+            {
+                float delta = -( outputsWished[i] - oneOutput.ActivationValue )
+                              * oneOutput.ActivationValue
+                              * ( 1.0f - oneOutput.ActivationValue );
+                Neuron.Link link = HiddenLayers[HiddenLayerNb - 1].Neurons[j].GetLinkTowards( oneOutput );
+                link.Error = delta;
+            }
+        }
+    }
