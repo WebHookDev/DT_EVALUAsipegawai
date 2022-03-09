@@ -209,3 +209,15 @@ public class NeuralNetwork
 
     public void ComputeErrors()
     {
+        foreach ( Neuron oneNeuron in InputLayer.Neurons )
+        {
+            foreach ( Neuron.Link oneLink in oneNeuron.NextLinks )
+            {
+                oneLink.Weight -= Gain * oneLink.Error * oneNeuron.ActivationValue;
+                oneLink.Error = 0.0f;
+            }
+        }
+
+        foreach ( NeuronLayer oneLayer in HiddenLayers )
+        {
+            foreach ( Neuron oneNeuron in oneLayer.Neurons )
