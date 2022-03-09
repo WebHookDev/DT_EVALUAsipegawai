@@ -178,3 +178,23 @@ public class NeuralNetwork
             }
         }
     }
+
+    private void ComputeHiddenLayersProp( float[] outputsWished )
+    {
+        // Manage error for HiddenLayers values
+        for ( int k = HiddenLayerNb - 1; k >= 0; --k )
+        {
+            for ( int i = 0; i < NeuronsPerHiddenLayer; ++i )
+            {
+                Neuron oneHidden = HiddenLayers[k].Neurons[i];
+                float totalError = 0.0f;
+
+                // Modify values of last HiddenLayer using Output values
+                for ( int j = 0; j < oneHidden.NextNeuronsNb; ++j )
+                {
+                    Neuron.Link link = oneHidden.NextLinks[j];
+
+                    totalError += link.Error * link.Weight;
+                }
+
+                for ( int j = 0; j < oneHidden.PreviousNeuronsNb; ++j )
