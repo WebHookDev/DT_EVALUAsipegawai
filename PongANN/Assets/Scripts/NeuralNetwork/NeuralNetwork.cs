@@ -198,3 +198,14 @@ public class NeuralNetwork
                 }
 
                 for ( int j = 0; j < oneHidden.PreviousNeuronsNb; ++j )
+                {
+                    float delta = totalError * oneHidden.ActivationValue * ( 1.0f - oneHidden.ActivationValue );
+                    Neuron.Link link = oneHidden.PreviousNeurons[j].GetLinkTowards( oneHidden );
+                    link.Error = delta;
+                }
+            }
+        }
+    }
+
+    public void ComputeErrors()
+    {
