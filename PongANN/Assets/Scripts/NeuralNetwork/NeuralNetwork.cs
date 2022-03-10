@@ -221,3 +221,15 @@ public class NeuralNetwork
         foreach ( NeuronLayer oneLayer in HiddenLayers )
         {
             foreach ( Neuron oneNeuron in oneLayer.Neurons )
+            {
+                foreach ( Neuron.Link oneLink in oneNeuron.NextLinks )
+                {
+                    oneLink.Weight -= oneLink.Error * oneNeuron.ActivationValue;
+                    oneLink.Error = 0.0f;
+                }
+            }
+        }
+    }
+
+    private void ComputeBackpropagation( float[] outputsWished )
+    {
