@@ -233,3 +233,10 @@ public class NeuralNetwork
 
     private void ComputeBackpropagation( float[] outputsWished )
     {
+        ComputeFirstOutputBackprop( outputsWished );
+
+        ComputeHiddenLayersProp( outputsWished );
+
+        ComputeErrors();
+    }
+    #endregion
