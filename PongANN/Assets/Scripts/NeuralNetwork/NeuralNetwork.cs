@@ -240,3 +240,19 @@ public class NeuralNetwork
         ComputeErrors();
     }
     #endregion
+
+    public void Display()
+    {
+        Console.Write( "\n\n-----------------------------------\n" );
+
+        Console.Write( "InputLayer\n" );
+        for ( int i = 0; i < InputNb; ++i )
+        {
+            Neuron oneNeuron = InputLayer.Neurons[i];
+            Console.Write( "\t[DebugId {0}][Activation {1}][Bias {2}]\n", oneNeuron.DebugId,
+                           oneNeuron.ActivationValue, oneNeuron.Bias );
+            for ( int j = 0; j < oneNeuron.NextNeuronsNb; j++ )
+            {
+                Console.Write( "\t\t[DebugId {0}][Weight {1}][Error {2}]\n",
+                               oneNeuron.NextLinks[j].NextNeuron.DebugId,
+                               oneNeuron.NextLinks[j].Weight, oneNeuron.NextLinks[i].Error );
