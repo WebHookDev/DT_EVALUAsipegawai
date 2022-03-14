@@ -256,3 +256,18 @@ public class NeuralNetwork
                 Console.Write( "\t\t[DebugId {0}][Weight {1}][Error {2}]\n",
                                oneNeuron.NextLinks[j].NextNeuron.DebugId,
                                oneNeuron.NextLinks[j].Weight, oneNeuron.NextLinks[i].Error );
+            }
+        }
+
+        for ( int k = 0; k < HiddenLayerNb; k++ )
+        {
+            Console.Write( "HiddenLayer[{0}]\n", k );
+            for ( int i = 0; i < NeuronsPerHiddenLayer; ++i )
+            {
+                Neuron oneNeuron = HiddenLayers[k].Neurons[i];
+                Console.Write( "\t[DebugId {0}][Activation {1}][Bias {2}]\n", oneNeuron.DebugId,
+                               oneNeuron.ActivationValue, oneNeuron.Bias );
+                for ( int j = 0; j < oneNeuron.PreviousNeuronsNb; j++ )
+                {
+                    Console.Write( "\t\tIN [DebugId {0}]\n",
+                                   oneNeuron.PreviousNeurons[j].DebugId );
