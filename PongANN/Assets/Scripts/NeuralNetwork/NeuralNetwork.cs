@@ -271,3 +271,16 @@ public class NeuralNetwork
                 {
                     Console.Write( "\t\tIN [DebugId {0}]\n",
                                    oneNeuron.PreviousNeurons[j].DebugId );
+                }
+                for ( int j = 0; j < oneNeuron.NextNeuronsNb; j++ )
+                {
+                    Console.Write( "\t\tOUT [DebugId {0}][Weight {1}][Error {2}]\n",
+                                   oneNeuron.NextLinks[j].NextNeuron.DebugId,
+                                   oneNeuron.NextLinks[j].Weight, oneNeuron.NextLinks[j].Error );
+                }
+            }
+        }
+
+        Console.Write( "OutputLayer\n" );
+        for ( int i = 0; i < OutputNb; ++i )
+        {
