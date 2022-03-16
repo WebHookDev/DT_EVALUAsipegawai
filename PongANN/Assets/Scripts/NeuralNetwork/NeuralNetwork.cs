@@ -284,3 +284,11 @@ public class NeuralNetwork
         Console.Write( "OutputLayer\n" );
         for ( int i = 0; i < OutputNb; ++i )
         {
+            Neuron oneNeuron = OutputLayer.Neurons[i];
+            Console.Write( "\t[DebugId {0}][Activation {1}][Bias {2}]\n", oneNeuron.DebugId,
+                           oneNeuron.ActivationValue, oneNeuron.Bias );
+        }
+
+        Console.Write( "\n-----------------------------------\n\n" );
+    }
+}
