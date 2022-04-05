@@ -17,3 +17,13 @@ public class Neuron
         {
             get { return m_weight; }
             set
+            {
+                //if (value < -1.0f || value > 1.0f)
+                //    throw new InvalidOperationException();
+                m_weight = value;
+            }
+        }
+
+        private float m_error = 0.0f;
+        public float Error
+        {
