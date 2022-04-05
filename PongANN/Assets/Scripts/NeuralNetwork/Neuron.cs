@@ -27,3 +27,15 @@ public class Neuron
         private float m_error = 0.0f;
         public float Error
         {
+            get { return m_error; }
+            set
+            {
+                if (value < -2.0f || value > 2.0f)
+                    throw new InvalidOperationException();
+                m_error = value;
+            }
+        }
+    }
+
+    #region Values
+    private float m_activationValue = 0.0f;
