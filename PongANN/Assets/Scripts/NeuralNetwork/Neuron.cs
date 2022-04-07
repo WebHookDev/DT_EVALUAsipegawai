@@ -39,3 +39,13 @@ public class Neuron
 
     #region Values
     private float m_activationValue = 0.0f;
+    public float ActivationValue
+    {
+        get { return m_activationValue; }
+        set
+        {
+            if (value < 0.0f || value > 1.0f)
+                throw new InvalidOperationException();
+            m_activationValue = value;
+        }
+    }
