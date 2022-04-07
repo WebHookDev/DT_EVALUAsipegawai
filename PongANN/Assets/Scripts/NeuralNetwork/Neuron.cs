@@ -49,3 +49,16 @@ public class Neuron
             m_activationValue = value;
         }
     }
+
+    private float m_bias = 0.0f;
+    public float Bias
+    {
+        get { return m_bias; }
+        set
+        {
+            if (value < -1.0f || value > 1.0f)
+                throw new InvalidOperationException();
+            m_bias = value;
+        }
+    }
+    #endregion
