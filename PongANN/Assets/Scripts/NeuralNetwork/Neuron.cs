@@ -91,3 +91,17 @@ public class Neuron
     private Link[] m_nextLinks;
     public Link[] NextLinks
     {
+        get { return m_nextLinks; }
+        protected set { m_nextLinks = value; }
+    }
+    #endregion
+    #endregion
+
+    public Neuron(NeuralNetwork neuralNetwork, bool randomValues = true)
+    {
+        DebugId = ++_staticId;
+
+        m_neuralNetwork = neuralNetwork;
+
+        if (!randomValues)
+            return;
