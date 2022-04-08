@@ -74,3 +74,11 @@ public class Neuron
 
     private Neuron[] m_previousNeurons;
     public Neuron[] PreviousNeurons
+    {
+        get { return m_previousNeurons; }
+        protected set { m_previousNeurons = value; }
+    }
+    #endregion
+
+    #region Next neurons
+    private int m_nextNeuronsNb;
