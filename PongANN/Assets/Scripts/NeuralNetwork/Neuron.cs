@@ -82,3 +82,12 @@ public class Neuron
 
     #region Next neurons
     private int m_nextNeuronsNb;
+    public int NextNeuronsNb
+    {
+        get { return m_nextNeuronsNb; }
+        protected set { m_nextNeuronsNb = value; }
+    }
+
+    private Link[] m_nextLinks;
+    public Link[] NextLinks
+    {
