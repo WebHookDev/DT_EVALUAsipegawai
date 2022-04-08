@@ -62,3 +62,15 @@ public class Neuron
         }
     }
     #endregion
+
+    #region Neurons wired
+    #region Previous neurons
+    private int m_previousNeuronsNb;
+    public int PreviousNeuronsNb
+    {
+        get { return m_previousNeuronsNb; }
+        protected set { m_previousNeuronsNb = value; }
+    }
+
+    private Neuron[] m_previousNeurons;
+    public Neuron[] PreviousNeurons
