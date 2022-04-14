@@ -105,3 +105,13 @@ public class Neuron
 
         if (!randomValues)
             return;
+
+        ActivationValue = Random.Range( 0.0f, 1.0f );
+        Bias = 1.0f; // Random.Range( -1.0f, 1.0f );
+    }
+
+    public void Activate()
+    {
+        float activationValue = 0;
+        for (int i = 0; i < PreviousNeuronsNb; ++i)
+            activationValue += PreviousNeurons[i].ActivationValue
