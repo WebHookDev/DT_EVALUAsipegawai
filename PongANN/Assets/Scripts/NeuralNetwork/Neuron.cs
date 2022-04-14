@@ -135,3 +135,20 @@ public class Neuron
         for (int i = 0; i < NextNeuronsNb; ++i)
         {
             if (NextLinks[i].NextNeuron == nextNeuron)
+                return NextLinks[i];
+        }
+
+        throw new ArgumentOutOfRangeException();
+    }
+
+    #region Layers
+    public void SetNextLayer(NeuronLayer nextLayer)
+    {
+        NextNeuronsNb = nextLayer.NeuronNb;
+        NextLinks = new Link[NextNeuronsNb];
+
+        for (int i = 0; i < NextNeuronsNb; ++i)
+        {
+            NextLinks[i] = new Link
+            {
+                NextNeuron = nextLayer.Neurons[i],
