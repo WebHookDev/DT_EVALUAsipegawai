@@ -115,3 +115,23 @@ public class Neuron
         float activationValue = 0;
         for (int i = 0; i < PreviousNeuronsNb; ++i)
             activationValue += PreviousNeurons[i].ActivationValue
+                               * PreviousNeurons[i].GetLinkTowards(this).Weight;
+        activationValue *= Bias;
+        ActivationValue = Sigmoid(activationValue);
+    }
+
+    private float Sigmoid(float val)
+    {
+        return (float)(1.0f / (1.0f + Math.Exp(-val)));
+    }
+
+    private float ReLU(float val)
+    {
+        return (float)Math.Max(val, 0.01 * val);
+    }
+
+    public Link GetLinkTowards(Neuron nextNeuron)
+    {
+        for (int i = 0; i < NextNeuronsNb; ++i)
+        {
+            if (NextLinks[i].NextNeuron == nextNeuron)
