@@ -152,3 +152,13 @@ public class Neuron
             NextLinks[i] = new Link
             {
                 NextNeuron = nextLayer.Neurons[i],
+                Weight = Random.Range(-1.0f, 1.0f),
+                Error = 0.0f
+            };
+        }
+    }
+
+    public void SetPreviousLayer(NeuronLayer previousLayer)
+    {
+        PreviousNeuronsNb = previousLayer.NeuronNb;
+        PreviousNeurons = new Neuron[PreviousNeuronsNb];
