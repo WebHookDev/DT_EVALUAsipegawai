@@ -162,3 +162,17 @@ public class Neuron
     {
         PreviousNeuronsNb = previousLayer.NeuronNb;
         PreviousNeurons = new Neuron[PreviousNeuronsNb];
+
+        for (int i = 0; i < PreviousNeuronsNb; ++i)
+        {
+            PreviousNeurons[i] = previousLayer.Neurons[i];
+        }
+    }
+    #endregion
+
+    public void SetAsInput(float activationValue)
+    {
+        // Bypass the sigmoid function
+        m_activationValue = activationValue;
+    }
+}
