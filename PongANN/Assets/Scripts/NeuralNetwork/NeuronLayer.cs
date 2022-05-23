@@ -1,1 +1,1 @@
-﻿publ
+﻿public class Ne
