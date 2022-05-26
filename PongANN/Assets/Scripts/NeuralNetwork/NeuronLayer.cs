@@ -1,1 +1,3 @@
-﻿public class Ne
+﻿public class NeuronLayer
+{
+    
