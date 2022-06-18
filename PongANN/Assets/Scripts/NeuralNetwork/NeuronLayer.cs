@@ -1,3 +1,3 @@
 ﻿public class NeuronLayer
 {
-    private NeuralNetwork m_ne
+    private NeuralNetwork m_neuralNetwork;
