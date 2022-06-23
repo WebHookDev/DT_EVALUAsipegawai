@@ -3,4 +3,5 @@
     private NeuralNetwork m_neuralNetwork;
 
     #region Neurons
-    private int m_neuron
+    private int m_neuronNb;
+    pub
