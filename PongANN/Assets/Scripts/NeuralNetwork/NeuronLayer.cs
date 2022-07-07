@@ -4,4 +4,4 @@
 
     #region Neurons
     private int m_neuronNb;
-    pub
+    public int NeuronN
