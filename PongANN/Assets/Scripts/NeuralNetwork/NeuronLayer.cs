@@ -4,4 +4,6 @@
 
     #region Neurons
     private int m_neuronNb;
-    public int NeuronN
+    public int NeuronNb
+    {
+       
