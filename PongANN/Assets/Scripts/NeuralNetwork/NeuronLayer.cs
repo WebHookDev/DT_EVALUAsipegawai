@@ -6,4 +6,5 @@
     private int m_neuronNb;
     public int NeuronNb
     {
-        get { return m_neuronN
+        get { return m_neuronNb; }
+      
