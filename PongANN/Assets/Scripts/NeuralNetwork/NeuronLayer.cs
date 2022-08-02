@@ -7,4 +7,4 @@
     public int NeuronNb
     {
         get { return m_neuronNb; }
-      
+        protected se
