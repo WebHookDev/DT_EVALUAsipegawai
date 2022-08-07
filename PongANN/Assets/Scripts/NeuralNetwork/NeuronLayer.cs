@@ -8,3 +8,6 @@
     {
         get { return m_neuronNb; }
         protected set { m_neuronNb = value; }
+    }
+
+    priva
