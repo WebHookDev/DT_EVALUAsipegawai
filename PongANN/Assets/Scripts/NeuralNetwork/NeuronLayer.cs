@@ -7,4 +7,4 @@
     public int NeuronNb
     {
         get { return m_neuronNb; }
-        protected set { m_neuro
+        protected set { m_neuronNb = value; }
