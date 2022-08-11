@@ -11,4 +11,4 @@
     }
 
     private Neuron[] m_neurons;
-    publ
+    public Neuron
