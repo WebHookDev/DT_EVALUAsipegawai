@@ -10,4 +10,5 @@
         protected set { m_neuronNb = value; }
     }
 
-    private Neuron[] m_neu
+    private Neuron[] m_neurons;
+    publ
