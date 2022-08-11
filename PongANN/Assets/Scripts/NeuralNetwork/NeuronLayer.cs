@@ -11,4 +11,5 @@
     }
 
     private Neuron[] m_neurons;
-    public Neuron
+    public Neuron[] Neurons
+   
