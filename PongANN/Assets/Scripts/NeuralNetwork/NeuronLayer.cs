@@ -14,4 +14,4 @@
     public Neuron[] Neurons
     {
         get { return m_neurons; }
-        pro
+        protected se
