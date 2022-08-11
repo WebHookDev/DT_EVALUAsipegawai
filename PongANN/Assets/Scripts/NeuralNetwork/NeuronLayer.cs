@@ -13,4 +13,4 @@
     private Neuron[] m_neurons;
     public Neuron[] Neurons
     {
-        get { retur
+        get { return m_neurons;
