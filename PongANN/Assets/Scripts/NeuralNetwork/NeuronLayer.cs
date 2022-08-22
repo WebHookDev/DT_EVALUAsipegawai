@@ -14,4 +14,5 @@
     public Neuron[] Neurons
     {
         get { return m_neurons; }
-        protected set { m_neurons = val
+        protected set { m_neurons = value; }
+  
