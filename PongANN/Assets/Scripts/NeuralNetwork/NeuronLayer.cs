@@ -16,4 +16,6 @@
         get { return m_neurons; }
         protected set { m_neurons = value; }
     }
-    #endreg
+    #endregion
+
+    #reg
