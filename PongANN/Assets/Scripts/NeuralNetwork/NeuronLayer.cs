@@ -19,4 +19,4 @@
     #endregion
 
     #region Linked layers
-    privat
+    private NeuronLaye
