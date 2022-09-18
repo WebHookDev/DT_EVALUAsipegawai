@@ -19,4 +19,5 @@
     #endregion
 
     #region Linked layers
-    private NeuronLayer m_previou
+    private NeuronLayer m_previousLayer;
+    pub
