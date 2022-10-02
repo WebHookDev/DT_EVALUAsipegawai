@@ -20,4 +20,4 @@
 
     #region Linked layers
     private NeuronLayer m_previousLayer;
-    pub
+    public NeuronLa
