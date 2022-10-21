@@ -21,3 +21,5 @@
     #region Linked layers
     private NeuronLayer m_previousLayer;
     public NeuronLayer PreviousLayer
+    {
+        g
