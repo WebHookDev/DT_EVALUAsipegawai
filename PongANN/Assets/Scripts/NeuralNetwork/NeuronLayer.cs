@@ -22,4 +22,4 @@
     private NeuronLayer m_previousLayer;
     public NeuronLayer PreviousLayer
     {
-        get { return m_
+        get { return m_previo
