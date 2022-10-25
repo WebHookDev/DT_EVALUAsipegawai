@@ -23,4 +23,4 @@
     public NeuronLayer PreviousLayer
     {
         get { return m_previousLayer; }
- 
+        prot
