@@ -23,4 +23,4 @@
     public NeuronLayer PreviousLayer
     {
         get { return m_previousLayer; }
-        protected set { m_prev
+        protected set { m_previousLayer = valu
