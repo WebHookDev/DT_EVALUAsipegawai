@@ -26,4 +26,4 @@
         protected set { m_previousLayer = value; }
     }
 
-    private NeuronL
+    private NeuronLayer m_nextLayer;
