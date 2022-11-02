@@ -27,4 +27,6 @@
     }
 
     private NeuronLayer m_nextLayer;
-    public NeuronLayer NextLa
+    public NeuronLayer NextLayer
+    {
+    
