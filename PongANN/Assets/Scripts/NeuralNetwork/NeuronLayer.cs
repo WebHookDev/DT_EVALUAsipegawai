@@ -29,4 +29,4 @@
     private NeuronLayer m_nextLayer;
     public NeuronLayer NextLayer
     {
-    
+        get 
