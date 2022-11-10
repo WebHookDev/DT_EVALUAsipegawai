@@ -30,4 +30,5 @@
     public NeuronLayer NextLayer
     {
         get { return m_nextLayer; }
-  
+        set
+      
