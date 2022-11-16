@@ -31,4 +31,5 @@
     {
         get { return m_nextLayer; }
         set
-      
+        {
+        
