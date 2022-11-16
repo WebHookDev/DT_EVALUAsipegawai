@@ -32,4 +32,4 @@
         get { return m_nextLayer; }
         set
         {
-        
+            m_nextLayer = val
