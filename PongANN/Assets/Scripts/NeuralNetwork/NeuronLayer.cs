@@ -33,4 +33,4 @@
         set
         {
             m_nextLayer = value;
-            // When changed NextLayer, need to up
+            // When changed NextLayer, need to update links between 
