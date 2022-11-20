@@ -33,4 +33,4 @@
         set
         {
             m_nextLayer = value;
-            // When changed NextLa
+            // When changed NextLayer, need to up
