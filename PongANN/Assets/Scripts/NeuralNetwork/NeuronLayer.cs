@@ -33,4 +33,4 @@
         set
         {
             m_nextLayer = value;
-            // When changed NextLayer, need to update links between neurons in th
+            // When changed NextLayer, need to update links between neurons in the two laye
