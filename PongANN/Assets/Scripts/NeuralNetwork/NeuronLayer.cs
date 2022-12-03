@@ -34,4 +34,4 @@
         {
             m_nextLayer = value;
             // When changed NextLayer, need to update links between neurons in the two layers
-        
+            OnChanged
