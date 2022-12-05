@@ -39,4 +39,4 @@
     }
     #endregion
 
-    public NeuronLay
+    public NeuronLayer( NeuralNetwor
