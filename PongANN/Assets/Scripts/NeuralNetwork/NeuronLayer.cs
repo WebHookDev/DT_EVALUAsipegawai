@@ -39,4 +39,4 @@
     }
     #endregion
 
-    p
+    public NeuronLay
