@@ -40,4 +40,5 @@
     #endregion
 
     public NeuronLayer( NeuralNetwork neuralNetwork, int neuronNb )
-    
+    {
+        m
