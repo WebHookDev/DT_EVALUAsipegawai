@@ -41,4 +41,4 @@
 
     public NeuronLayer( NeuralNetwork neuralNetwork, int neuronNb )
     {
-        m_neuralNetwor
+        m_neuralNetwork = neuralNetw
