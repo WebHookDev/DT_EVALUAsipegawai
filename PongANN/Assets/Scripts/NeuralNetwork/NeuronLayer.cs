@@ -43,4 +43,5 @@
     {
         m_neuralNetwork = neuralNetwork;
 
-        Neur
+        NeuronNb = neuronNb;
+ 
