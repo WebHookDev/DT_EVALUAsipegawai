@@ -44,4 +44,5 @@
         m_neuralNetwork = neuralNetwork;
 
         NeuronNb = neuronNb;
-        Neurons = new Neuron[Neur
+        Neurons = new Neuron[NeuronNb];
+  
