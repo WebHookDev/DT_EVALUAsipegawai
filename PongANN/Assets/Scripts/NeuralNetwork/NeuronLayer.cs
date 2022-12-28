@@ -45,4 +45,4 @@
 
         NeuronNb = neuronNb;
         Neurons = new Neuron[NeuronNb];
-  
+        
