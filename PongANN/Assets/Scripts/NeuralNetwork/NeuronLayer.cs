@@ -45,4 +45,4 @@
 
         NeuronNb = neuronNb;
         Neurons = new Neuron[NeuronNb];
-        for ( int i = 
+        for ( int i = 0; i < Neu
