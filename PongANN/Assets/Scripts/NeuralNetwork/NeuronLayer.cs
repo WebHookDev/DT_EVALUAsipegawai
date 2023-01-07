@@ -46,4 +46,4 @@
         NeuronNb = neuronNb;
         Neurons = new Neuron[NeuronNb];
         for ( int i = 0; i < NeuronNb; ++i )
-            Neurons[i] = new Neuron(
+            Neurons[i] = new Neuron( neuralNetwor
