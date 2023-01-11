@@ -49,4 +49,4 @@
             Neurons[i] = new Neuron( neuralNetwork );
     }
 
-    publi
+    public void Activ
