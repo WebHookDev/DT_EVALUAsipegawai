@@ -49,4 +49,5 @@
             Neurons[i] = new Neuron( neuralNetwork );
     }
 
-    public void Activ
+    public void ActivateLayer()
+   
