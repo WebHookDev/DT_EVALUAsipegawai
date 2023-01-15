@@ -51,4 +51,4 @@
 
     public void ActivateLayer()
     {
-        for ( int
+        for ( int i = 0; i <
