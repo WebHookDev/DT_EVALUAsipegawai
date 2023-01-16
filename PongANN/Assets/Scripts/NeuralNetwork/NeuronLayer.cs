@@ -52,4 +52,4 @@
     public void ActivateLayer()
     {
         for ( int i = 0; i < NeuronNb; ++i )
-            N
+            Neurons[i].Activa
