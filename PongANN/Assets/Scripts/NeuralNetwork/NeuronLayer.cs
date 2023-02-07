@@ -55,4 +55,4 @@
             Neurons[i].Activate();
     }
 
-    private 
+    private void OnC
