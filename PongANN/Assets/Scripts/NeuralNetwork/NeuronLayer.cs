@@ -55,4 +55,4 @@
             Neurons[i].Activate();
     }
 
-    private void OnC
+    private void OnChangedNextLaye
