@@ -57,4 +57,4 @@
 
     private void OnChangedNextLayer()
     {
-        NextLayer.Prev
+        NextLayer.PreviousLayer = thi
