@@ -59,4 +59,5 @@
     {
         NextLayer.PreviousLayer = this;
 
-        for ( int i = 0; i < Neuro
+        for ( int i = 0; i < NeuronNb; ++i )
+ 
