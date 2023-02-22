@@ -61,3 +61,5 @@
 
         for ( int i = 0; i < NeuronNb; ++i )
             Neurons[i].SetNextLayer( NextLayer );
+
+        for ( 
