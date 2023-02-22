@@ -60,4 +60,4 @@
         NextLayer.PreviousLayer = this;
 
         for ( int i = 0; i < NeuronNb; ++i )
-            Neurons[i].SetNextLayer( Ne
+            Neurons[i].SetNextLayer( NextLayer );
