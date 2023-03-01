@@ -63,4 +63,4 @@
             Neurons[i].SetNextLayer( NextLayer );
 
         for ( int i = 0; i < NextLayer.NeuronNb; ++i )
-            NextLayer.Neurons[i].SetPreviousLaye
+            NextLayer.Neurons[i].SetPreviousLayer( this );
