@@ -64,3 +64,5 @@
 
         for ( int i = 0; i < NextLayer.NeuronNb; ++i )
             NextLayer.Neurons[i].SetPreviousLayer( this );
+    }
+}
